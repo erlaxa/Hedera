@@ -1,0 +1,52 @@
+/* Purple primary button */
+button.btn-purple {
+    background-color: #6f42c1; /* purple background */
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  button.btn-purple:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+  }
+  
+  /* Remove color change on click/focus */
+  button.btn-purple:focus,
+  button.btn-purple:active {
+    background-color: #6f42c1; /* keep purple */
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4); /* keep hover shadow if needed */
+    transform: translateY(-2px); /* keeps hover lift */
+  }
+  
+/* Outline light secondary button */
+button.btn-light-outline {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #fff;
+  border: 1px solid #f8f9fa;
+  background-color: transparent;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+  outline: none;
+}
+
+button.btn-light-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+button.btn-light-outline:focus,
+button.btn-light-outline:active {
+  box-shadow: none;
+  transform: translateY(-2px);
+}

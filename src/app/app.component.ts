@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { invoke } from '@tauri-apps/api/core';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'hedera';
+  
+  async onButtonClick() {
+    const message = await invoke<string>('show_popup');
+    alert(message); // this shows the popup
+  }
 }

@@ -1,0 +1,111 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+  }
+  
+  .title-text {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .yellow-text {
+    color: #f5c542;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .input-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 12px 16px;  /* row gap / column gap */
+    padding: 1rem;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-item span {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  
+  .grid-item input {
+    background-color: #0a0a0a;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 100%;   /* fill column */
+    box-sizing: border-box;
+  }
+  
+  .grid-item input:focus {
+    outline: none;
+    background-color: #111;
+    border-color: #666;
+    color: #fff;
+  }
+  
+  .input-number {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+  }
+  
+  .dark-input {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 0.6rem;
+    border-radius: 6px;
+    color: #ddd;
+  }
+  
+  .dark-input::placeholder {
+    color: #888;
+  }
+  
+  .checkbox-dark {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .checkbox-dark label {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .btn-primary-dark {
+    background-color: #1f1f1f;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin-top: 1rem;
+  }
+  
+  .btn-primary-dark:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  .btn-primary-dark:hover:enabled {
+    background-color: #333;
+  }

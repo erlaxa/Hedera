@@ -1,0 +1,31 @@
+<div class="page-container">
+    <p class="title-text">Recovery Phrase</p>
+    <p class="yellow-text">
+      This phrase is the ONLY way to recover your wallet.<br>
+      Do NOT share it with anyone!
+    </p>
+  
+    <div class="input-grid">
+        <div *ngFor="let box of boxes; let i = index" class="grid-item">
+          <span>{{ i + 1 }}</span>
+          <input type="text" class="dark-input" placeholder="">
+        </div>
+    </div>
+  
+    <div class="form-check checkbox-dark">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="check1"
+        [(ngModel)]="phraseSaved"
+      >
+      <label class="form-check-label" for="check1">
+        I saved my recovery phrase
+      </label>
+    </div>
+  
+    <button class="btn-primary-dark" [disabled]="!phraseSaved">
+      Continue
+    </button>
+</div>
+  
